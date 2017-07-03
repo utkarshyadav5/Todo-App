@@ -4,18 +4,19 @@
     <title>Todo List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <script type="text/javascript" src="./assets/todo-list.js"></script>
 </head>
 <body>
-    <h3>Todo List</h3>
+    <h5>Todo List</h5>
     <div id="todo-table">
         <form>
             <input type="text" name="item" placeholder="Add new item..." required />
             <button type="submit">Add item</button>
         </form>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <% for (var i=0;i<todos.length;i++) {%>
+                <li><%= todos[i].item %></li>
+            <% } %>
         </ul>
     </div>
 </body>
