@@ -19,3 +19,14 @@ A simple todo app using Node.js
     `npm install`
 4. Type `node app.js` to run the app on localhost:3000
 5. Enjoy the app
+
+## Dependencies
+
+* Express
+    ``` npm install express -save```
+* Ejs
+    ``` npm install ejs -save```
+* Mongoose
+    ``` npm install mongoose -save```
+* Body-parser
+    ``` npm install body-parser -save```
